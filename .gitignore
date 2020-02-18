@@ -1,9 +1,9 @@
 venv/
 .idea
-core/local_settings.py
+config/local_settings.py
 .DS_Store
 */__pycache__/
 .coverage
 geckodriver.log
-users/migrations/__pycache__/
-
+profiles/migrations/__pycache__/
+.pytest_cache
