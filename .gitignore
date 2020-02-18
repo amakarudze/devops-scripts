@@ -2,4 +2,8 @@ venv/
 .idea
 core/local_settings.py
 .DS_Store
-core/__pycache__/
+*/__pycache__/
+.coverage
+geckodriver.log
+users/migrations/__pycache__/
+
