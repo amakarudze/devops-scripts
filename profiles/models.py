@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
-class UserManager(BaseUserManager):
+class UserProfileManager(BaseUserManager):
     """Manager for user profiles."""
 
     def create_user(self, email, first_name, last_name, password=None):
@@ -28,7 +28,7 @@ class UserManager(BaseUserManager):
         return user
 
 
-class User(AbstractUser):
+class UserProfile(AbstractUser):
     """Database model for profiles."""
     ROLES = (
         ('Software Engineer', 'Software Engineer'),
@@ -49,7 +49,7 @@ class User(AbstractUser):
     password = models.CharField(max_length=255)
     last_password_update = models.DateTimeField(auto_now=True)
 
-    objects = UserManager()
+    objects = UserProfileManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name']
