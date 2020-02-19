@@ -1,5 +1,9 @@
+import logging
+
 from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+
+logging.basicConfig(level=logging.DEBUG, filename='users.log')   # DEBUG, INFO, WARN, ERROR
 
 
 class UserProfileManager(BaseUserManager):
@@ -7,7 +11,9 @@ class UserProfileManager(BaseUserManager):
 
     def create_user(self, email, first_name, last_name, password=None):
         """Create a new user profile."""
+        logging.debug('Checking if user has an email address.')
         if not email:
+            logging.error('Users must have an email address.')
             raise ValueError('Users must have an email address.')
 
         email = self.normalize_email(email)
@@ -16,6 +22,7 @@ class UserProfileManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
 
+        logging.info(f'User {username} created successfully!')
         return user
 
     def create_superuser(self, email, first_name, last_name, password):
@@ -25,6 +32,7 @@ class UserProfileManager(BaseUserManager):
         user.is_staff = True
         user.save(using=self._db)
 
+        logging.info(f'Super user {user.username} created successfully!')
         return user
 
 
