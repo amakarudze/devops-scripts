@@ -48,13 +48,13 @@ class UserProfile(AbstractUser):
         ('Site Reliability Engineering', 'Site Reliability Engineering'),
         ('Implementation Engineering', 'Implementation Engineering'),
     )
-    email = models.EmailField(max_length=255, unique=True)
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    email = models.EmailField(max_length=100, unique=True)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
     date_joined = models.DateTimeField(auto_now_add=True)
     role = models.CharField(max_length=100, choices=ROLES)
     department = models.CharField(max_length=100, choices=DEPARTMENTS)
-    password = models.CharField(max_length=255)
+    password = models.CharField(max_length=100)
     last_password_update = models.DateTimeField(auto_now=True)
 
     objects = UserProfileManager()

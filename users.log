@@ -26,3 +26,37 @@ INFO:django.utils.autoreload:Watching for file changes with StatReloader
 INFO:django.utils.autoreload:/Users/anna/code/devops/profiles/urls.py changed, reloading.
 DEBUG:asyncio:Using selector: KqueueSelector
 INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/Users/anna/code/devops/profiles/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Not Found: /api/
+WARNING:django.request:Not Found: /favicon.ico/
+WARNING:django.request:Bad Request: /api/user-view
+INFO:django.utils.autoreload:/Users/anna/code/devops/profiles/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Not Found: /api/user-view/
+WARNING:django.request:Bad Request: /api/user-view
+WARNING:django.request:Bad Request: /api/user-view
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Not Found: /profiles_api/
+WARNING:django.request:Not Found: /api/
+WARNING:django.request:Bad Request: /api/user-view
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /api/
+WARNING:django.request:Bad Request: /api/user-view
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
